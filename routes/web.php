@@ -18,3 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/cari-kerja', [Controller::class, 'cari_kerja'])->name('cari_kerja');
+Route::get('/dashboard', [Controller::class, 'dashboard'])->name('dashboard');

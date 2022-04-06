@@ -17,5 +17,10 @@ class Controller extends BaseController
     {
         $pekerjaan = Pekerjaan::all(); 
         return view('cari_kerja', compact('pekerjaan'));
+    } 
+    public function dashboard()
+    {
+        $pekerjaan = Pekerjaan::all(); 
+        return view('dashboard', compact('pekerjaan'));
     }
 }
